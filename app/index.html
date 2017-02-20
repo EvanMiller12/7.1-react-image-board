@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>7 1 react image board</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="well form-holder">
+      <button type="button" class="btn btn-default" aria-label="Left Align">
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+      </button>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="thumbnail">
+               <img src="https://avatars1.githubusercontent.com/u/24722004?v=3&s=460" alt="pic">
+            </div>
+              <div class="caption">
+                <p>caption text for the image</p>
+              </div>
+          </div>
+        </div>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control image-url" id="url" placeholder="Image URL">
+          </div>
+          <div class="form-group">
+            <textarea type="text" class="form-control image-caption" id="caption" placeholder="Image Caption"></textarea>
+          </div>
+            <button class="cancel-btn" type="submit" name="cancel">Cancel</button>
+            <button class="add-image-btn" type="submit" name="submit">
+              <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+              Add Image
+            </button>
+        </form>
+      </div>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
